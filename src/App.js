@@ -24,13 +24,13 @@ function App() {
     },
   ];
 
-  const listItems = expenses.map((expense) => {
+  const listItems = expenses.map((expense) => (
     <ExpenseItem
       title={expense.title}
       date={expense.date}
       amount={expense.amount}
-    />;
-  });
+    />
+  ));
 
   return (
     <div className="App">
