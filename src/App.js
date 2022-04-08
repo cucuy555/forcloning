@@ -25,9 +25,14 @@ function App() {
     },
   ];
 
+  const addExpenseHandler = (newExpense) => {
+    console.log("app.js");
+    console.log(newExpense);
+  };
+
   return (
     <div className="App">
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <div className="expenses">
         <Expense expense={expenses} />
       </div>
